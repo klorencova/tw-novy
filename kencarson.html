@@ -43,37 +43,13 @@
 <body>
     <img src="https://images.genius.com/7691b69f0717dacd9c678521d722160a.1000x1000x1.png" alt="Logo" class="logo">
     <div class="header">Žebříček písní Kena Carsona</div>
+    <p>..</p>
+    <p>..</p>
     <div class="container">
-        <p>Hlasujte pro svou oblíbenou píseň!</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbDJHZ9dgcZef62oD2TX4oZJEmbwVeAnEffo9fZ-19czwZ0Q/viewform?usp=dialog" target="_blank">Otevřít formulář</a>
         <h2>Hodnocení</h2>
         <canvas id="chart"></canvas>
-    </div>
-    <script src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNBoRpBH_2CSAglNVN-TCuSeE3tPmeBLtX65HVuZKqDGWxIs40R4z5O4XzeovHZiWA0GA8vfHT3MWX/pubchart?oid=1118921005&format=image"></script>
-    <script>
-        var ctx = document.getElementById('chart').getContext('2d');
-        var chart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Píseň 1', 'Píseň 2', 'Píseň 3', 'Píseň 4', 'Píseň 5'],
-                datasets: [{
-                    label: 'Hodnocení',
-                    data: [5, 8, 6, 7, 9],
-                    backgroundColor: 'rgba(0, 123, 255, 0.5)',
-                    borderColor: 'rgba(0, 123, 255, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 10
-                    }
-                }
-            }
-        });
-    </script>
+    
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNBoRpBH_2CSAglNVN-TCuSeE3tPmeBLtX65HVuZKqDGWxIs40R4z5O4XzeovHZiWA0GA8vfHT3MWX/pubchart?oid=1118921005&amp;format=interactive"></iframe>
 </body>
 </html>
