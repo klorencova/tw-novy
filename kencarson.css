@@ -1,0 +1,65 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(90deg, #ff007f, #000000);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.header:hover {
+    background: linear-gradient(90deg, #220144, #ff007f);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+a {
+    color: #ff007f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #7f00ff;
+}
+
+.logo {
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveLogo 3s infinite alternate ease-in-out;
+}
+
+@keyframes moveLogo {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(20px);
+    }
+}
+
+canvas {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
